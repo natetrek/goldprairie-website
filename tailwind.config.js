@@ -5,17 +5,33 @@ module.exports = {
   ],
   theme: {
     extend: {
-      borderWidth: {
-        '7': '7px',
-      },
       height: {
         '560': '560px',
       },
-
       typography: (theme) => {
         return {
           DEFAULT: {
             css: {
+              p: {
+                fontSize: '1rem',
+                lineHeight: '1.7rem',
+                color: '#333',
+              },
+              h1: {
+                fontSize: '3.5rem',
+                fontWeight: '700',
+                color: '#222',
+              },
+              h2: {
+                fontSize: '2.25rem',
+                fontWeight: '400',
+                color: '#222',
+              },
+              h3: {
+                fontSize: '1.125rem',
+                fontWeight: '600',
+                color: '#222',
+              },
               a: {
                 color: theme(`colors.blue`),
                 textDecoration: null,
@@ -34,7 +50,6 @@ module.exports = {
       colors: {
         black: '#000',
         white: '#fff',
-        blue:  '#1c75bc',
       },
     },
     container: {

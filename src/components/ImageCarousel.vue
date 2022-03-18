@@ -5,10 +5,10 @@
       <!-- Content -->
       <div id="carousel-img-content" class="absolute container top-0 inset-x-0 mx-auto mt-24">
         <div class="mx-20">
-          <div class="hero-text-sm">{{ content[contentIdx].heading[0] }}</div>
-          <div class="hero-text-lg drop-shadow-md mb-4">{{ content[contentIdx].heading[1] }}</div>
-          <div class="hero-text-md drop-shadow-md mb-1">{{ content[contentIdx].heading[2] }}</div>
-          <div class="hero-text-md drop-shadow-md mb-10">{{ content[contentIdx].heading[3] }}</div>
+          <div class="hero-text-sm drop-shadow-md">{{ content[contentIdx].headings[0] }}</div>
+          <div class="hero-text-lg drop-shadow-md mb-4">{{ content[contentIdx].headings[1] }}</div>
+          <div class="hero-text-md drop-shadow-md mb-1">{{ content[contentIdx].headings[2] }}</div>
+          <div class="hero-text-md drop-shadow-md mb-10">{{ content[contentIdx].headings[3] }}</div>
           <button class="hero-btn hover:bg-gray-100 hover:bg-opacity-20">{{ content[contentIdx].button }}</button>
         </div>
       </div>
@@ -70,6 +70,7 @@ export default {
 <style scoped>
   .hero-text-sm {
     font-size: 14px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: theme('colors.white');
   }
