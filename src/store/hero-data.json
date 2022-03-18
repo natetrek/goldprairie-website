@@ -1,0 +1,34 @@
+{
+    "content": [
+        {
+        "id": 1,
+        "heading": [ "Next generation payment monitoring",
+                     "Faster Results. Full Control.",
+                     "Discover the most direct, cost-effective approach to preventing lost profits" ],
+        "button": "Learn More"
+        },
+        {
+        "id": 2,
+        "heading": [ "Retail solutions",
+                     "Automate your internal recovery process",
+                     "Pinpoint and recover overpayment errors at a fraction of your current cost",
+                     "Recover your profits in days, not years" ],
+        "button": "Learn More"
+        },
+        {
+        "id": 3,
+        "heading": [ "Duplicate prevention",
+                     "Eliminate duplicate payments",
+                     "Why wait for a recovery audit to catch duplicate payments?",
+                     "Automatically detect and prevent them before they go out the door" ],
+        "button": "Learn More"
+        },
+        {
+        "id": 4,
+        "heading": [ "Vendor monitoring",
+                     "Remove risk from your ERP system",
+                     "Reduce payment errors by cleaning and monitoring your vendor master file" ],
+        "button": "Learn More"
+        }
+    ]
+}

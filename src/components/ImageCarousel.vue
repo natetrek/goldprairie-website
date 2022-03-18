@@ -1,18 +1,35 @@
 <template>
     <div class="carousel-image-container relative h-64 sm:h-48 lg:h-560">
       <!-- Carousel image-->
-      <img id="carousel-img-id" class="absolute w-full h-full brightness-75" :src="getCarouselImgUrl(imgIndex)" alt="Trekking Logs">
+      <img id="carousel-img-id" class="absolute w-full h-full brightness-75" :src="getCarouselImgUrl(imgIndex)" alt="Automate your internal recovery process">
+      <!-- Content -->
+      <div id="carousel-img-content" class="absolute container top-0 inset-x-0 mx-auto mt-24">
+        <div class="mx-20">
+          <div class="hero-text-sm">{{ content[contentIdx].heading[0] }}</div>
+          <div class="hero-text-lg drop-shadow-md mb-4">{{ content[contentIdx].heading[1] }}</div>
+          <div class="hero-text-md drop-shadow-md mb-1">{{ content[contentIdx].heading[2] }}</div>
+          <div class="hero-text-md drop-shadow-md mb-10">{{ content[contentIdx].heading[3] }}</div>
+          <button class="hero-btn hover:bg-gray-100 hover:bg-opacity-20">{{ content[contentIdx].button }}</button>
+        </div>
+      </div>
       <!-- Carousel image selectors-->
       <div id="carousel-img-selectors" class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2.5">
         <div v-for="(item,idx) in new Array(4)" :key="idx">
-          <button v-if="this.imgIndex==(idx+1)" @click="btnUpdateImg(idx)" class="carousel-btn bg-white"></button>
-          <button v-else @click="btnUpdateImg(idx)" class="carousel-btn bg-gray-400"></button>
+          <button v-if="this.imgIndex==(idx+1)" @click="btnUpdateImg(idx)" v-bind:value="contentIdx" class="px-1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 24 24" width="13px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>
+          </button>
+          <button v-else @click="btnUpdateCarousel(idx)" v-bind:value="contentIdx" class="px-1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 24 24" width="13px" fill="#B4B4B1"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/></svg>
+          </button>
         </div>
       </div>
     </div>
+
 </template>
 
 <script>
+import json from '../store/hero-data.json'
+
 export default {
     props: {
         isMobile: {
@@ -23,33 +40,26 @@ export default {
 
     data: function() {
         return {
+          content: json.content,
+          contentIdx: 0,
           imgIndex: 1,
+          carouselKey: 0,
         };
     },
 
     methods: {
         // get image URL for the carousel images
         getCarouselImgUrl(pic) {
-        this.heroImage = this.isMobile ? 'hero-0'+pic+'-sm.jpg' : 'hero-0'+pic+'-lg.jpg'
-        return new URL(`../assets/${this.heroImage}`, import.meta.url).href
+          this.heroImage = this.isMobile ? 'hero-0'+pic+'-sm.jpg' : 'hero-0'+pic+'-lg.jpg'
+          return new URL(`../assets/${this.heroImage}`, import.meta.url).href
         },
-
-        // update the carousel image when user clicks the previous nav button
-        btnPrev() {
-        this.imgIndex = this.imgIndex <= 1 ? 7 : this.imgIndex - 1
-        document.getElementById("carousel-img-id").src = this.getCarouselImgUrl(this.imgIndex)
-        },
-
-        // update the carousel image when user clicks the next nav button
-        btnNext() {
-        this.imgIndex = this.imgIndex >= 7 ? 1 : this.imgIndex + 1
-        document.getElementById("carousel-img-id").src = this.getCarouselImgUrl(this.imgIndex)
-        },
-
         // update the carousel image when user clicks a carousel button
-        btnUpdateImg(idx) {
-        this.imgIndex = idx+1
-        document.getElementById("carousel-img-id").src = this.getCarouselImgUrl(this.imgIndex)
+        btnUpdateCarousel(idx) {
+          this.imgIndex = idx+1
+          this.contentIdx = idx
+
+          //update carousel image
+          document.getElementById("carousel-img-id").src = this.getCarouselImgUrl(this.imgIndex)
         },
 
     }
@@ -58,18 +68,35 @@ export default {
 
 
 <style scoped>
+  .hero-text-sm {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: theme('colors.white');
+  }
+  .hero-text-md {
+    font-size: 28px;
+    font-weight: 600;
+    color: theme('colors.white');
+  }
+  .hero-text-lg {
+    font-size: 56px;
+    font-weight: bold;
+    color: theme('colors.white');
+  }
+  .hero-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: theme('colors.white');
+    padding: 16px 32px 16px 32px;
+    border: 1px solid theme('colors.white');
+    border-radius: 5px;
+  }
+
   .carousel-image-container #carousel-img-selectors {
       display: flex;
   }
 
-  .carousel-btn {
-    color: theme('colors.white');
-    border: 1px solid theme('colors.gray.400');
-    padding: 4px;
-    margin: 4px;
-    border-radius: 50%;
-  }
-  .carousel-btn:hover {
-    background-color: theme('colors.white');
+  svg {
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
   }
 </style>
