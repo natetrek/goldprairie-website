@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-blue text-white">
+  <footer class="bg-neutral-800 text-white">
     <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4 sm:py-6">
       <div class="mb-4 sm:mb-0">&copy; 2007-2019 Gold Prairie LLC. All Rights Reserved.</div>
       <ul class="flex items-center space-x-8">
