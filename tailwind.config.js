@@ -6,32 +6,16 @@ module.exports = {
   theme: {
     extend: {
       height: {
+        '450': '450px',
         '560': '560px',
+      },
+      width: {
+        '600': '600px',
       },
       typography: (theme) => {
         return {
           DEFAULT: {
             css: {
-              p: {
-                fontSize: '1rem',
-                lineHeight: '1.7rem',
-                color: '#333',
-              },
-              h1: {
-                fontSize: '3.5rem',
-                fontWeight: '700',
-                color: '#222',
-              },
-              h2: {
-                fontSize: '2.25rem',
-                fontWeight: '400',
-                color: '#222',
-              },
-              h3: {
-                fontSize: '1.125rem',
-                fontWeight: '600',
-                color: '#222',
-              },
               a: {
                 color: theme(`colors.blue`),
                 textDecoration: null,

@@ -1,7 +1,7 @@
 <template>
-    <div class="container-inner mx-auto flex flex-col justify-between">
-        <img src="../assets/404.svg" alt="404 page not found" width="700"/>
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mt-16">Page not found</h2>
+    <div class="container-inner mx-auto">
+        <div class="pb-12 lg:pb-24"><a href='https://www.freepik.com/free-vector/404-error-with-portals-concept-illustration_20824302.htm'><img src="../assets/404.svg" title="Image by storyset - www.freepik.com" alt="404 page not found" class="w-64 lg:w-600"/></a></div>
+        <div class="text-2xl sm:text-3xl font-bold text-center pb-32">Page not found</div>
     </div>
 </template>
 
@@ -13,3 +13,4 @@ export default {
   }),
 };
 </script>
+

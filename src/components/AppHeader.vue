@@ -1,24 +1,24 @@
 <template>
     <header class="top-0 left-0 z-40 fixed bg-white w-full">
-      <nav class="container mx-auto flex flex-wrap justify-between">
+      <nav class="container mx-auto flex flex-wrap justify-between items-center">
         <div>
           <router-link to="/" @click.native="scrollToTop">
             <img class="py-4" src="../assets/logo.png" alt="logo" />
           </router-link>
         </div>
-        <div class="block md:hidden"> <!-- hamburger -->
+        <div class="block lg:hidden"> <!-- hamburger -->
           <button @click="toggleBurger" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-700 hover:border-gray-700">
             <svg class="current-color h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
           </button>
         </div>
-        <ul class="nav-btn-container uppercase tracking-wide font-bold text-sm w-full block flex-grow space-y-6 md:space-y-0 md:flex md:flex-initial md:w-auto items-center"
+        <ul class="nav-btn-container uppercase tracking-wide font-bold text-sm pb-4 w-full block flex-grow lg:flex lg:flex-initial lg:w-auto lg:pb-0 items-center"
             :class="isOpen ? 'block': 'hidden'"
         >
-          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn">Why Gold Prairie</div></router-link></li>
-          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn">Solutions</div></router-link></li>
-          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn">Technology</div></router-link></li>
-          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn">About Us</div></router-link></li>
-          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn">Login</div></router-link></li>
+          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Why Gold Prairie</div></router-link></li>
+          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Solutions</div></router-link></li>
+          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Technology</div></router-link></li>
+          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">About Us</div></router-link></li>
+          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Login</div></router-link></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +49,6 @@
 <style scoped>
   .nav-btn {
     color: theme('colors.gray.500');
-    padding: 32px 16px 32px 16px;
   }
   .nav-btn:hover {
     background-color: theme('colors.gray.100');
