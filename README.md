@@ -1,4 +1,4 @@
-# Gold Prairie Website Archive
+## Gold Prairie Website Archive
 
 A reconstructed version of the home page of the Gold Prairie website found in the Internet Archive (archived on 07/05/2019):
 
@@ -6,32 +6,32 @@ A reconstructed version of the home page of the Gold Prairie website found in th
 
 Site is a single static page; all nav bar items are non-functioning. It's recreated here as a sample of earlier work for my startup portfolio.
 
-## Demo URL
+### Demo URL
 
 [https://goldprairie.natetrek.com](https://goldprairie.natetrek.com)
 
-## Technologies used
+### Technologies used
 
 - [Vite](https://vitejs.dev/)
 - [Vue 3](https://vuejs.org/)
 - [Tailwind CSS v3](https://tailwindcss.com)
 - [Node v14](https://nodejs.org/en/)
 
-## Notes
+### Notes
 
 - Carousel used for the hero area is a custom built Vue component
 - Button styling was updated slightly from the original
 - Icons are from [Google's material icon set](https://fonts.google.com/icons?selected=Material+Icons)
 - Images are all from [Unsplash](https://unsplash.com/)
 
-## Image sources
+### Image sources
 - Hero image 1: [Elegant boardroom - by Benjamin Child](https://unsplash.com/photos/0sT9YhNgSEs)
 - Hero image 2: [Urban exploring in SF - by Fran](https://unsplash.com/photos/1RUNbHofhYQ)
 - Hero image 3: [AliExpress shopping on my iPhone - by CardMapr](https://unsplash.com/photos/SGj4fw55Y7w)
 - Hero image 4: [All rise - by Ian Dooley](https://unsplash.com/photos/hpTH5b6mo2s)
 
 
-## Installation and setup
+### Installation and setup
 
 1. Install dependencies
 
