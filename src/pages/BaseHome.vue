@@ -12,6 +12,9 @@
     <!-- Technology -->
     <HomeSectionThree />
 
+    <!-- Call to action -->
+    <HomeSectionFour />
+
 
 </template>
 
@@ -20,6 +23,7 @@ import ImageCarousel from '../components/ImageCarousel.vue'
 import HomeSectionOne from '../components/HomeSectionOne.vue'
 import HomeSectionTwo from '../components/HomeSectionTwo.vue'
 import HomeSectionThree from '../components/HomeSectionThree.vue'
+import HomeSectionFour from '../components/HomeSectionFour.vue'
 
 export default {
   name: "BaseHome",
@@ -29,6 +33,7 @@ export default {
     HomeSectionOne,
     HomeSectionTwo,
     HomeSectionThree,
+    HomeSectionFour,
   },
 
   data: function() {

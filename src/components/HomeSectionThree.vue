@@ -1,7 +1,7 @@
 <template>
   <div class="container-inner flex mx-auto py-16">
     <div class="basis-1/2">
-      <img  src="../assets/technology.jpg" alt="Technology" class="shadow-xl pt-8 mx-auto">
+      <img src="../assets/technology.jpg" alt="Technology" class="shadow-xl pt-8 mx-auto">
     </div>
     <div class="basis-1/2">
       <div class="prose max-w-none space-y-12 ml-8 pr-8">
