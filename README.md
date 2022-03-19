@@ -2,7 +2,7 @@
 
 A reconstructed version of the home page of the Gold Prairie website found in the Internet Archive (archived on 07/05/2019):
 
-[Internet Archive - www.goldprairie.com - July, 5 2019](https://web.archive.org/web/20190705221951/https://www.goldprairie.com/))
+[Internet Archive - www.goldprairie.com - July, 5 2019](https://web.archive.org/web/20190705221951/https://www.goldprairie.com/)
 
 Site is a single static page; all nav bar items are non-functioning. It's recreated here as a sample of earlier work for my startup portfolio.
 
