@@ -52,11 +52,7 @@ export default {
         // get image URL for the carousel images
         getCarouselImgUrl(pic) {
           this.heroImage = this.isMobile ? 'hero-0'+pic+'-sm.jpg' : 'hero-0'+pic+'-lg.jpg'
-          return "/assets/" + this.heroImage
-
-          // approach used before converting site to use Vite-SSG; previously images were in /src/assets folder
-          // (see: https://vitejs.dev/guide/assets.html#new-url-url-import-meta-url)
-          // return new URL(`../assets/${this.heroImage}`, import.meta.url).href
+          return new URL(`../assets/${this.heroImage}`, import.meta.url).href
         },
         // update the carousel image when user clicks a carousel button
         btnUpdateCarousel(idx) {

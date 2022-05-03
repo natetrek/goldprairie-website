@@ -1,6 +1,7 @@
 <template>
 
     <!-- Hero area -->
+    <ImageCarousel :isMobile="isMobile" />
 
     <!-- Solution highlights -->
     <div class="home-content-section container-inner mx-2 md:mx-auto py-8 md:py-16">
@@ -11,21 +12,21 @@
       <div v-if="isMobile" class="border-t-2 border-gray-100 pb-2"></div>
       <div class="flex flex-col md:flex-row basis-1/3 mx-2 md:mx-auto gap-8 md:gap-12 my-4">
         <div class="flex-col space-y-4">
-          <img src="/assets/shopping-cart.svg" alt="Retail & Grocery Payment Monitoring" width="48px" class="mx-auto">
+          <img src="../assets/shopping-cart.svg" alt="Retail & Grocery Payment Monitoring" width="48px" class="mx-auto">
           <div class="subheading">Retail & Grocery Payment Monitoring</div>
           <div class="content">Gold Prairie pinpoints and prevents a wide range of payment errors common in the retail industry, including duplicate payments, pricing errors, missed promotional allowances and missed rebates. With Gold Prairie, you can identify overpayments in real-time at a fraction of your current cost.</div>
           <button class="font-bold text-blue-500">Learn More</button>
         </div>
         <div v-if="isMobile" class="border-t-2 border-gray-100"></div>
         <div class="flex-col space-y-4">
-          <img src="/assets/task-complete.svg" alt="Duplicate Payment Prevention" width="48px" class="mx-auto">
+          <img src="../assets/task-complete.svg" alt="Duplicate Payment Prevention" width="48px" class="mx-auto">
           <div class="subheading">Duplicate Payment Prevention</div>
           <div class="content">Why wait for a recovery audit to catch duplicate payments? With Gold Prairie, you can eliminate duplicate payments from your organization. Gold Prairie continuously monitors your payment systems and automatically detects potential duplicate payments before they go out the door.</div>
           <button class="font-bold text-blue-500">Learn More</button>
         </div>
         <div v-if="isMobile" class="border-t-2 border-gray-100"></div>
         <div class="flex-col space-y-4">
-          <img src="/assets/alarm-clock.svg" alt="Vendor File Analysis and Monitoring" width="48px" class="mx-auto">
+          <img src="../assets/alarm-clock.svg" alt="Vendor File Analysis and Monitoring" width="48px" class="mx-auto">
           <div class="subheading">Vendor File Analysis and Monitoring</div>
           <div class="content">Get your vendor file under control and keep it clean for the long-haul. Gold Prairie enables you to quickly identify duplicated and erroneous vendor entries. And, once it’s clean, Gold Prairie’s automated vendor monitoring system will help you keep it that way.</div>
           <button class="font-bold text-blue-500">Learn More</button>
@@ -38,7 +39,7 @@
       <div class="home-content-section container-inner flex flex-col md:flex-row mx-2 md:mx-auto py-8 md:py-16">
         <!-- On mobile - display image on top -->
         <div v-if="isMobile" class="basis-1/2">
-          <img  src="/assets/control-feedback-loop.png" alt="Control feedback loop" class="mx-auto">
+          <img  src="../assets/control-feedback-loop.png" alt="Control feedback loop" class="mx-auto">
         </div>
         <div class="basis-1/2">
           <div class="space-y-8 md:space-y-12 pt-4 md:pt-8">
@@ -48,7 +49,7 @@
           </div>
         </div>
         <div v-if="!isMobile" class="basis-1/2">
-          <img  src="/assets/control-feedback-loop.png" alt="Control feedback loop" class="mx-auto">
+          <img  src="../assets/control-feedback-loop.png" alt="Control feedback loop" class="mx-auto">
         </div>
       </div>
     </div>
@@ -56,7 +57,7 @@
     <!-- Technology -->
     <div class="home-content-section container-inner flex flex-col md:flex-row mx-2 md:mx-auto py-8 md:py-20">
       <div class="basis-1/2 pb-12 md:pb-4">
-        <img src="/assets/technology.jpg" alt="Technology" class="shadow-xl pt-4 mx-auto">
+        <img src="../assets/technology.jpg" alt="Technology" class="shadow-xl pt-4 mx-auto">
       </div>
       <div class="basis-1/2">
         <div class="space-y-8 md:space-y-12 md:ml-8 pr-8">
