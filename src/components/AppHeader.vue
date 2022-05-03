@@ -14,7 +14,7 @@
         <ul class="nav-btn-container uppercase tracking-wide font-bold text-sm pb-4 w-full block flex-grow lg:flex lg:flex-initial lg:w-auto lg:pb-0 items-center"
             :class="isOpen ? 'block': 'hidden'"
         >
-          <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Why Gold Prairie</div></router-link></li>
+          <li><router-link to="/test" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Why Gold Prairie</div></router-link></li>
           <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Solutions</div></router-link></li>
           <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">Technology</div></router-link></li>
           <li><router-link to="/" @click="scrollToTop"><div class="nav-btn py-4 lg:px-4 lg:py-8">About Us</div></router-link></li>

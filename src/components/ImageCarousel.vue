@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import json from '../store/hero-data.json'
+import json from '../data/hero-data.json'
 
 export default {
     props: {
@@ -74,7 +74,7 @@ export default {
     },
 
     mounted () {
-      this.rotateCarousel()
+//      this.rotateCarousel()
     }
 }
 </script>
