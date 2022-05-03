@@ -74,7 +74,7 @@ export default {
     },
 
     mounted () {
-//      this.rotateCarousel()
+      this.rotateCarousel()
     }
 }
 </script>
