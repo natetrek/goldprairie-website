@@ -5,14 +5,14 @@ import App from './App.vue';
 import { ViteSSG } from 'vite-ssg'
 import BaseHome from './pages/BaseHome.vue';
 import TestPage from './pages/TestPage.vue';
-import NotFound from './pages/NotFound.vue';
+// import NotFound from './pages/NotFound.vue';
 
 import './css/main.css'
 
 const routes = [
   { path: '/', component: BaseHome },
   { path: '/test', component: TestPage },
-  { path: "/:catchAll(.*)", component: NotFound },
+//  { path: "/:catchAll(.*)", component: NotFound },
 ];
 
 /*
