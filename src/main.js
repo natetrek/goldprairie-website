@@ -3,17 +3,14 @@ import { createWebHistory, createRouter } from 'vue-router';
 
 import App from './App.vue';
 import BaseHome from './pages/BaseHome.vue';
-import TestPage from './pages/TestPage.vue';
 import NotFound from './pages/NotFound.vue';
 
 import './css/main.css'
 
 const routes = [
   { path: '/', component: BaseHome },
-  { path: '/test', component: TestPage },
   { path: "/:catchAll(.*)", component: NotFound },
 ];
-
 
 const router = createRouter({
   history: createWebHistory(),
