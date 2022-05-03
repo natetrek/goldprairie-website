@@ -3,7 +3,7 @@
       <nav class="container mx-auto flex flex-wrap justify-between items-center">
         <div>
           <router-link to="/" @click.native="scrollToTop">
-            <img class="py-4" src="../assets/logo.png" alt="logo" />
+            <img class="py-4" src="/assets/logo.png" alt="logo" />
           </router-link>
         </div>
         <div class="block lg:hidden"> <!-- hamburger -->
