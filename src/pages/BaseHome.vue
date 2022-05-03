@@ -1,7 +1,6 @@
 <template>
 
     <!-- Hero area -->
-    <ImageCarousel :isMobile="isMobile" />
 
     <!-- Solution highlights -->
     <div class="home-content-section container-inner mx-2 md:mx-auto py-8 md:py-16">
