@@ -8,14 +8,13 @@ Site is a single static page; all nav bar items are non-functioning. It's recrea
 
 ### Demo URL
 
-[https://goldprairie.natetrek.com](https://goldprairie.natetrek.com)
+[https://goldprairie.natewilliams.dev](https://goldprairie.natewilliams.dev)
 
 ### Technologies used
 
 - [Vite](https://vitejs.dev/)
 - [Vue 3](https://vuejs.org/)
 - [Tailwind CSS v3](https://tailwindcss.com)
-- [Node v14](https://nodejs.org/en/)
 
 ### Notes
 
@@ -29,7 +28,6 @@ Site is a single static page; all nav bar items are non-functioning. It's recrea
 - Hero image 2: [Urban exploring in SF - by Fran](https://unsplash.com/photos/1RUNbHofhYQ)
 - Hero image 3: [AliExpress shopping on my iPhone - by CardMapr](https://unsplash.com/photos/SGj4fw55Y7w)
 - Hero image 4: [All rise - by Ian Dooley](https://unsplash.com/photos/hpTH5b6mo2s)
-
 
 ### Installation and setup
 
